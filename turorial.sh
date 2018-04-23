@@ -74,7 +74,7 @@ git cherry-pick <hash> : this copies the commit from the <from-branch> to the <t
 git checkout <to-branch> : move back to the <to-branch>
 Now we need to use git reset to remove the commit in the <from-branch>
 Types of git reset:
-- git reset soft
+- git reset --soft <hash> : resets back to t the <hash> but keeps changed in the stating area
 - git reset mixed (default) 
 - git reset hard
 
