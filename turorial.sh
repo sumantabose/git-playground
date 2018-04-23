@@ -1,5 +1,3 @@
-
-
 WORKING ON A LOCAL REPO AND PUSHING IT TO REMOTE
 git clone <URL>  or git init
 git diff
@@ -11,6 +9,9 @@ git pull
 <work on files>
 git status
 … repeat
+
+GETTING RID OF UNTRACKED FILES AND DIRECTORIES
+git clean -df (d for directory and f for file)
 
 BRANCHING OUT AND MERGING BACK TO MASTER v1
 git branch
@@ -70,16 +71,14 @@ COPY A COMMIT FROM ONE BRANCH TO ANOTHER
 stay in the <from-branch>
 git log & copy the first few characters of the commit you want to copy
 git checkout <to-branch>
+git checkout <to-branch>
 git cherry-pick <hash> : this copies the commit from the <from-branch> to the <to-branch>, does not delete the commit in the <from-branch>
 git checkout <to-branch> : move back to the <to-branch>
 Now we need to use git reset to remove the commit in the <from-branch>
 Types of git reset:
-- git reset --soft <hash> : resets back to t the <hash> but keeps changed in the stating area
-- git reset mixed (default) 
-- git reset hard
+- soft reset : git reset --soft <hash> : resets back to the <hash> but keeps changes in the staging area. See git status
+- mixed reset (default) : git reset <hash> :  resets back to the <hash> but does not keep changes in the staging area, rather keeps them in working area. See git status
+- git reset hard : git reset —hard <hash> : resets back to the <hash> and keeps no changes in the staging or working area. See git status
 
-
-
-
-
-
+TO RECOVER COMMITS DELETED USING git hard reset 
+git reflog
