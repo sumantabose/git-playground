@@ -82,3 +82,10 @@ Types of git reset:
 
 TO RECOVER COMMITS DELETED USING git hard reset 
 git reflog
+git checkout <hash-before-reset>
+git log (and check)
+git branch <backup-branch> (this creates a new branch with the <hash-before-reset> state)
+git checkout master (back to master)
+git branch -a (you have recovered the <backup-branch> if you need it)
+
+
