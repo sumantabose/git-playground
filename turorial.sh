@@ -75,6 +75,8 @@ git checkout <to-branch>
 git cherry-pick <hash> : this copies the commit from the <from-branch> to the <to-branch>, does not delete the commit in the <from-branch>
 git checkout <to-branch> : move back to the <to-branch>
 Now we need to use git reset to remove the commit in the <from-branch>
+
+USING GIT RESET
 Types of git reset:
 - soft reset : git reset --soft <hash> : resets back to the <hash> but keeps changes in the staging area. See git status
 - mixed reset (default) : git reset <hash> :  resets back to the <hash> but does not keep changes in the staging area, rather keeps them in working area. See git status
@@ -82,3 +84,14 @@ Types of git reset:
 
 TO RECOVER COMMITS DELETED USING git hard reset 
 git reflog
+git checkout <hash-before-reset>
+git log (and check)
+git branch <backup-branch> (this creates a new branch with the <hash-before-reset> state)
+git checkout master (back to master)
+git branch -a (you have recovered the <backup-branch> if you need it)
+
+REVERT CHANGES MADE IN PREVIOUS COMMITS WITHOUT CHANGING HISTORY
+git log
+git revert <hash-of-commit-to-revert>
+git log
+git diff <hash-of-reverted-commit> <hash-of-new-commit-after-reverting>
