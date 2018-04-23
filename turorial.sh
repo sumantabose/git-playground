@@ -91,7 +91,9 @@ git checkout master (back to master)
 git branch -a (you have recovered the <backup-branch> if you need it)
 
 REVERT CHANGES MADE IN PREVIOUS COMMITS WITHOUT CHANGING HISTORY
+(important while working in a group, coz you don’t want to mess up other’s history)
 git log
 git revert <hash-of-commit-to-revert>
 git log
 git diff <hash-of-reverted-commit> <hash-of-new-commit-after-reverting>
+
