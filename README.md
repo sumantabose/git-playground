@@ -133,6 +133,14 @@ $ git log
 $ git diff <hash-of-reverted-commit> <hash-of-new-commit-after-reverting>
 ```
 
+## Using git stash
+```sh
+$ git shash save "message" : to stash any recent changes made and go back to last committed(?) version
+$ git stash list : shows a list of stashed versions
+$ git stash apply stash@{#} : choose # from the list. this will go back to the stashed version and keep the stashed version
+$ git stash pop : this will go back to the 1st version in the stash list and drop the stash (will not keep it)
+```
+>>>>>>> people
 
 
 # License
