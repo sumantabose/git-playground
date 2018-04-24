@@ -1,5 +1,5 @@
 # Git-Playground
-#### Compiled by [Sumanta Bose](https://sumantabose.github.io)
+#### Compiled by [Sumanta Bose](https://sumantabose.github.io){:target="_blank"}
 ##### Email: [sumanta001@e.ntu.edu.sg](mailto:sumanta001@e.ntu.edu.sg)
 
 [![N|Solid](https://cdn.kualo.com/blogassets/wp-content/uploads/2015/11/git.jpg)](https://nodesource.com/products/nsolid)
@@ -26,7 +26,7 @@ $ git status
 ```sh
 $ git clean -df (d for directory and f for file)
 ```
-## BRANCHING OUT AND MERGING BACK TO MASTER v1
+## Branching out and merging back to master v1
 ```sh
 $ git branch
 $ git branch feature1
