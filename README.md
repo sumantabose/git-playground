@@ -1,5 +1,5 @@
 # Git-Playground
-#### Compiled by [Sumanta Bose](https://sumantabose.github.io){:target="_blank"}
+#### Compiled by [Sumanta Bose](https://sumantabose.github.io target="_blank")
 ##### Email: [sumanta001@e.ntu.edu.sg](mailto:sumanta001@e.ntu.edu.sg)
 
 [![N|Solid](https://cdn.kualo.com/blogassets/wp-content/uploads/2015/11/git.jpg)](https://nodesource.com/products/nsolid)
