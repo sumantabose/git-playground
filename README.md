@@ -86,7 +86,18 @@ $ git push origin master
 ## To see ...
 ```sh
 $ git remote -v
-$ git branch -a
+$ git branch -a (to see all branches)
+$ git branch -r (to see remote branches)
+$ git branch —-merged (shows branches that have been merged so far)
+$ git branch —-no-merged (shows branches that have not been merged so far)
+```
+
+## To check out a remote git branch
+```sh
+$ git fetch or git fetch origin (will fetch all of the remote branches)
+$ git branch -v -a (see all branches verbose)
+$ git checkout test [will NOT work in if you have multiple remotes]
+$ git checkout -b test <name of remote>/test [usually <name of remote> = origin]
 ```
 
 ## Make sure to pull master before pushing 
