@@ -2,7 +2,7 @@
 #### Compiled by [Sumanta Bose](https://sumantabose.github.io)
 ##### Email: [sumanta001@e.ntu.edu.sg](mailto:sumanta001@e.ntu.edu.sg)
 
-[![N|Solid](https://cdn.kualo.com/blogassets/wp-content/uploads/2015/11/git.jpg)]()
+[![N|Solid](https://cdn.kualo.com/blogassets/wp-content/uploads/2015/11/git.jpg)](https://github.com/sumantabose/git-playground/blob/master/README.md)
 
 This is a playground to learn and practice git commands and implementation details. Here we will learn how Git works.
 
