@@ -77,7 +77,8 @@ $ git checkout <branchname>
     $ git push origin <branchname>
 $ git checkout master
 $ git pull origin master (to get updated with the current code before merging/pushing)
-$ git branch —merged (shows branches that have been merged so far)
+$ git branch —-merged (shows branches that have been merged so far)
+$ git branch —-no-merged (shows branches that have not been merged so far)
 $ git merge <branchname>
 $ git push origin master
 ```
@@ -98,7 +99,7 @@ $ git push -u origin <branchname> (and git push in future)
 
 ## Deleting a merged branch
 ```sh
-$ git branch —merged
+$ git branch -—merged
 $ git branch -d <branchname>
 $ git branch -a
 $ git push origin —delete <branchname>
