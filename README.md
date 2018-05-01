@@ -6,8 +6,28 @@
 
 This is a playground to learn and practice git commands and implementation details. Here we will learn how Git works.
 
-## Working on a local repo and pushing it to remote
+## Setting config values
+```sh
+$ git config --list (to check username & email in local repo)
+$ git config --local user.name "username" (local repo)
+$ git config --local user.email "useremail@domain.com" (local repo)
+$ git config --global user.name "username" (global systemwide)
+$ git config --global user.email "useremail@domain.com" (global systemwide)
+```
 
+## Setting credential values
+```sh
+$ git config credential.username "new_username" (local repo)
+$ git config credential.username --global "new_username" (global systemwide)
+```
+
+## Working with remote URLs
+```sh
+$ git config --get remote.origin.url (to see remote URL)
+$ git remote set-url origin https://{url} (to save remote URL)
+```
+
+## Working on a local repo and pushing it to remote
 ```sh
 $ git clone <URL>  or git init
 $ git diff
@@ -20,7 +40,6 @@ $ git pull
 $ git status
 … repeat
 ```
-
 
 ## Getting rid of untracked files and directories
 ```sh
@@ -142,7 +161,6 @@ $ git stash pop : this will go back to the 1st version in the stash list and dro
 $ git stash drop stash@{#} : drops stash # from the list
 $ git stash clear : drop all stashes from the list
 ```
-
 
 # License
 Free to clone, distribute and reuse.
