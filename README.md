@@ -48,8 +48,8 @@ $ git clean -df (d for directory and f for file)
 ## Branching out and merging back to master v1
 ```sh
 $ git branch
-$ git branch feature1
-$ git checkout feature1
+$ git branch <branchname>
+$ git checkout <branchname>
 	<work on files>
 	$ git diff
 	$ git status
@@ -57,11 +57,29 @@ $ git checkout feature1
 	$ git commit -m “message” or git commit
 $ git checkout master
 $ git pull
-$ git checkout feature1
+$ git checkout <branchname>
 $ git merge master
-$ git push (git push --set-upstream origin feature1)
+$ git push (git push --set-upstream origin <branchname>)
 send a pull request to other members
 after someone accepts the pull request, you may or may not delete the branch
+```
+
+## Branching out and merging back to master v2
+```sh
+$ git branch
+$ git branch <branchname>
+$ git checkout <branchname>
+<work on files>
+    $ git diff
+    $ git status
+    $ git add <filenames>
+    $ git commit -m "message" or git commit
+    $ git push origin <branchname>
+$ git checkout master
+$ git pull origin master (to get updated with the current code before merging/pushing)
+$ git branch —merged (shows branches that have been merged so far)
+$ git merge <branchname>
+$ git push origin master
 ```
 
 ## To see ...
@@ -76,16 +94,6 @@ $ git branch -a
 $ git pull origin master
 $ git push origin master
 $ git push -u origin <branchname> (and git push in future)
-```
-
-## Branching out and merging back to master v2
-```sh
-> add, commit, push <branchname>
-$ git checkout master
-$ git pull origin master (to get updated with the current code before merging/pushing)
-$ git branch —merged (shows branches that have been merged so far)
-$ git merge <branchname>
-$ git push origin master
 ```
 
 ## Deleting a merged branch
