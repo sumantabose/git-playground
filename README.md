@@ -97,7 +97,7 @@ $ git branch —-no-merged (shows branches that have not been merged so far)
 $ git fetch or git fetch origin (will fetch all of the remote branches)
 $ git branch -v -a (see all branches verbose)
 $ git checkout test [will NOT work in if you have multiple remotes]
-$ git checkout -b test <name of remote>/test [usually <name of remote> = origin]
+$ git checkout -b <name of repo> <name of remote>/<name of repo> [usually <name of remote> = origin]
 ```
 
 ## Make sure to pull master before pushing 
