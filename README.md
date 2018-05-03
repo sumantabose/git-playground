@@ -21,10 +21,12 @@ $ git config credential.username "new_username" (local repo)
 $ git config credential.username --global "new_username" (global systemwide)
 ```
 
-## Working with remote URLs
+## Working with remotes and remote URLs
 ```sh
-$ git config --get remote.origin.url (to see remote URL)
-$ git remote set-url origin https://{url} (to save remote URL)
+$ git config --get remote.origin.url (to get remote URL)
+$ git remote add origin https://{url} (to set a new remote 'origin')
+$ git remote -v (to verify the new remote)
+$ git remote set-url origin https://{url} (to set remote URL)
 ```
 
 ## Working on a local repo and pushing it to remote
