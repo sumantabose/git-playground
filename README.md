@@ -152,7 +152,7 @@ now we need to use git reset to remove the commit in the <from-branch>
 ```sh
 - soft reset : $ git reset --soft <hash> : resets back to the <hash> but keeps changes in the staging area. See git status
 - mixed reset (default) : $ git reset <hash> :  resets back to the <hash> but does not keep changes in the staging area, rather keeps them in working area. See git status
-- git reset hard : $ git reset —hard <hash> : resets back to the <hash> and keeps no changes in the staging or working area. See git status
+- git reset hard : $ git reset -—hard <hash> : resets back to the <hash> and keeps no changes in the staging or working area. See git status
 ```
 
 ## To recover commits deleted using git hard reset 
