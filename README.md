@@ -49,6 +49,12 @@ $ git push <remote-name> --all
 ```
 `<remote-name>` is usually `origin`.
 
+## Renaming branches while pushing
+```sh
+$ git push <remote-name> <local-branch-name>:<remote-branch-name>
+```
+This pushes `<local-branch-name>` to `<remote-name>`, but renames it to `<remote-branch-name>`.
+
 ## Getting rid of untracked files and directories
 ```sh
 $ git clean -df (d for directory and f for file)
