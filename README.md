@@ -43,6 +43,12 @@ $ git status
 … repeat
 ```
 
+## Pushing all local branches to remote
+```sh
+$ git push <remote-name> --all
+```
+`<remote-name>` is usually `origin`.
+
 ## Getting rid of untracked files and directories
 ```sh
 $ git clean -df (d for directory and f for file)
