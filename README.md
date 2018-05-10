@@ -59,7 +59,7 @@ This pushes `<local-branch-name>` to `<remote-name>`, but renames it to `<remote
 ```sh
 $ git clean -df (d for directory and f for file)
 ```
-## Branching out and merging back to master v1
+## Branching out and merging back from master v1
 ```sh
 $ git branch
 $ git branch <branchname>
@@ -111,7 +111,8 @@ $ git branch —-no-merged (shows branches that have not been merged so far)
 $ git fetch or git fetch origin (will fetch all of the remote branches)
 $ git branch -v -a (see all branches verbose)
 $ git checkout test [will NOT work in if you have multiple remotes]
-$ git checkout -b <name of repo> <name of remote>/<name of repo> [usually <name of remote> = origin]
+$ git checkout -b <name of local repo> <name of remote>/<name of remote repo> 
+[usually <name of remote> = origin]
 ```
 
 ## Make sure to pull master before pushing 
